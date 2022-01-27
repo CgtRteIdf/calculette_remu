@@ -15,12 +15,17 @@ st.set_page_config(layout="wide")
 
 st.title('Calculette rémunération')
 
-texte = ['Cette calculette vise à permettre aux agent-e-s RTE d\'estimer leurs perspectives salariales **brutes** dans le système de rémunération actuel.', 
-         'L\'application n\'intègre pas les NR "Hors Classe" pour le moment.']
+texte = ['Bienvenue sur le site de la Calculette Rému ! Cette page permet de projeter sa rémunération actuelle (brute) dans le temps, d’intégrer les évolutions prévues (prise de NR par ex) et de comparer cette projection avec l’inflation.',
+	 'Pour mémoire l’inflation n’est pas le même indice que le pouvoir d’achat (il ne comprend pas les coûts de logement, par exemple), mais il donne un bon premier aperçu de ce que représenterait votre rémunération d’aujourd’hui avec les prix de demain.',
+	 'Vous avez la possibilité dans la partie gauche définir les paramètres qui vous semblent les plus réalistes :\n',
+	 '- NR : votre NR actuel\n',
+	 '- Taux de promotion : le rythme auquel vous imaginez avoir une promotion (prise d’un NR). La courbe « optimiste » prend une vision légèrement plus positive que ce que vous avez prévu (dans l’exemple 0.5NR / an), la courbe pessimiste c’est l’inverse. La calculette ne prend pas en compte les NR « Hors Classe ».\n', 
+	 '- Ancienneté : intègre les prises d’échelon automatiquement.\n',
+	 '- Taux d’inflation : à ajuster selon les prévisions INSEE.']
 texte = ' '.join(texte)
 
 st.write(texte)
-st.write('Vous pouvez consulter les données et le code source de cette application sur [GitHub](https://github.com) ou nous faire part de vos questions et suggestions à [cgtrterp@gmail.com](mailto:cgtrterp@gmail.com).')
+st.write('Cette calculette est rendue accessible par le travail d’adhérent·es bénévoles. Vous pouvez consulter les données et le code source de cette application sur [GitHub](https://github.com) ou nous faire part de vos questions et suggestions à [cgtrterp@gmail.com](mailto:cgtrterp@gmail.com).')
 st.write('**L\'application n\'enregistre et n\'envoie aucune donnée personnelle.**')
 
 
