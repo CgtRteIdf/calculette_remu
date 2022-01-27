@@ -114,13 +114,13 @@ def convert_df(df):
 
 csv = convert_df(trajectoire)
 
-st.download_button(
-"Télécharger les données de ma simulation",
-csv,
-"Données_calculette_rémunération.csv",
-"text/csv",
-key='download-csv'
-)
+# st.download_button(
+# "Télécharger les données de ma simulation",
+# csv,
+# "Données_calculette_rémunération.csv",
+# "text/csv",
+# key='download-csv'
+# )
 
 # cacher le "Made with streamlit
 # https://www.kdnuggets.com/2021/07/streamlit-tips-tricks-hacks-data-scientists.html
