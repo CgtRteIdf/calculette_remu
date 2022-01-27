@@ -16,9 +16,9 @@ st.set_page_config(layout="wide")
 st.title('Calculette rémunération')
 st.write('Bienvenue ! Cette calculette permet de projeter sa rémunération actuelle (brute) dans le temps, d’intégrer les évolutions prévues (prise de NR par ex) et de comparer cette projection avec l’inflation. **L\'application n\'enregistre et n\'envoie aucune donnée personnelle.**')
 st.write('Pour mémoire l’inflation n’est pas le même indice que le pouvoir d’achat (il ne comprend pas les coûts de logement, par exemple), mais il donne un bon premier aperçu de ce que représenterait votre rémunération d’aujourd’hui avec les prix de demain.')
-texte = ['Dans la partie latérale gauche, vous pouvez définir les paramètres de vos simulations :\n',
+texte = ['Dans la partie latérale gauche, vous pouvez définir différents paramètres pour vos simulations :\n',
 	 '- **NR :** votre NR actuel\n',
-	 '- **Taux de promotion :** le rythme auquel vous imaginez avoir une promotion (prise d’un NR). La courbe « optimiste » prend une vision légèrement plus positive que ce que vous avez prévu (dans l’exemple 0.5NR / an), la courbe pessimiste c’est l’inverse. La calculette ne prend pas en compte les NR « Hors Classe ».\n', 
+	 '- **Taux de promotion :** le rythme auquel vous imaginez avoir une promotion (prise d’un NR). La courbe « optimiste » prend une vision légèrement positive que la moyenne, la courbe pessimiste c’est l’inverse. La calculette ne prend pas en compte les NR « Hors Classe ».\n', 
 	 '- **Ancienneté :** intègre les prises d’échelon automatiquement.\n',
 	 '- **Taux d’inflation :** à ajuster selon les prévisions INSEE.']
 texte = ' '.join(texte)
@@ -73,7 +73,7 @@ df_pessimiste, __ = calc_trajectoire(NR_actuel, echelon_actuel, periode_NR_pessi
 
 if chart_id == chart_list[0]:
     st.subheader('Trajectoires')
-    st.write('Les trajectoires moyennes sont obtenues sous l\'hypothèse que chaque agent·e RTE a la même probabilité de recevoir un avancement chaque année. On obtient donc en moyenne un avancement tous les 2,4 ans.')
+    st.write('Les trajectoires moyennes sont obtenues sous l\'hypothèse que chaque agent·e RTE a la même probabilité de recevoir un avancement chaque année. **On obtient donc en moyenne un avancement tous les 2,4 ans.**')
     col1, col2 = st.columns(2)
     
     cols = df_moyenne.columns
