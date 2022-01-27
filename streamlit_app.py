@@ -15,7 +15,7 @@ st.set_page_config(layout="wide")
 
 st.title('Calculette rémunération')
 st.write('Bienvenue ! Cette calculette permet de projeter sa rémunération actuelle (**brute**) dans le temps, de **simuler les évolutions prévues** (prise de NR par ex) et de **comparer cette projection avec l’inflation**. **L\'application n\'enregistre et n\'envoie aucune donnée personnelle.**')
-st.write('Pour mémoire l’inflation n’est pas le même indice que le pouvoir d’achat (il ne comprend pas les coûts de logement, par exemple), mais il donne un bon premier aperçu de ce que représenterait votre rémunération d’aujourd’hui avec les prix de demain.')
+st.write('Pour mémoire l’inflation n’est pas le même indice que le pouvoir d’achat, car elle ne comprend pas les coûts de logement, par exemple. En revanche, elle donne un bon premier aperçu de ce que représenterait votre rémunération d’aujourd’hui avec les prix de demain.')
 texte = ['Dans la partie latérale gauche, vous pouvez définir différents paramètres pour vos simulations :\n',
 	 '- **NR :** votre NR actuel\n',
 	 '- **Taux de promotion :** le rythme auquel vous imaginez avoir une promotion (prise d’un NR). La courbe « optimiste » prend une vision légèrement positive que la moyenne, la courbe pessimiste c’est l’inverse. La calculette ne prend pas en compte les NR « Hors Classe ».\n', 
