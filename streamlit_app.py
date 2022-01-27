@@ -46,7 +46,7 @@ periode_NR_pessimiste = st.sidebar.number_input("nombre d'années entre 2 promot
 
 # annee
 anciennete = date_actuelle - date_entree_ieg
-taux_inflation = 0.01 * st.sidebar.slider('Taux d\'inflation', 0., 4, inflation_moyenne, 0.1, format="%f%%")
+taux_inflation = 0.01 * st.sidebar.slider('Taux d\'inflation', 0., 4., inflation_moyenne, 0.1, format="%f%%")
 #date_depart_retraite = int(st.sidebar.number_input("année de départ en retraite", min_value=2021, max_value=2065, value=int(date_actuelle + 42 - anciennete), step=1))
 date_depart_retraite = int(st.sidebar.number_input("année de départ en retraite", min_value=2021, max_value=2065, value=int(2050), step=1))
 # college = st.sidebar.radio(
