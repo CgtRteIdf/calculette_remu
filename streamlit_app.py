@@ -14,10 +14,9 @@ pd.options.plotting.backend = "plotly"
 st.set_page_config(layout="wide")
 
 st.title('Calculette rémunération')
-
-texte = ['Bienvenue sur le site de la Calculette Rému ! Cette page permet de projeter sa rémunération actuelle (brute) dans le temps, d’intégrer les évolutions prévues (prise de NR par ex) et de comparer cette projection avec l’inflation.',
-	 'Pour mémoire l’inflation n’est pas le même indice que le pouvoir d’achat (il ne comprend pas les coûts de logement, par exemple), mais il donne un bon premier aperçu de ce que représenterait votre rémunération d’aujourd’hui avec les prix de demain.',
-	 'Vous avez la possibilité dans la partie gauche définir les paramètres qui vous semblent les plus réalistes :\n',
+st.write('Bienvenue ! Cette calculette permet de projeter sa rémunération actuelle (brute) dans le temps, d’intégrer les évolutions prévues (prise de NR par ex) et de comparer cette projection avec l’inflation.')
+st.write('Pour mémoire l’inflation n’est pas le même indice que le pouvoir d’achat (il ne comprend pas les coûts de logement, par exemple), mais il donne un bon premier aperçu de ce que représenterait votre rémunération d’aujourd’hui avec les prix de demain.')
+texte = ['Vous avez la possibilité dans la partie gauche définir les paramètres qui vous semblent les plus réalistes :\n',
 	 '- NR : votre NR actuel\n',
 	 '- Taux de promotion : le rythme auquel vous imaginez avoir une promotion (prise d’un NR). La courbe « optimiste » prend une vision légèrement plus positive que ce que vous avez prévu (dans l’exemple 0.5NR / an), la courbe pessimiste c’est l’inverse. La calculette ne prend pas en compte les NR « Hors Classe ».\n', 
 	 '- Ancienneté : intègre les prises d’échelon automatiquement.\n',
@@ -25,7 +24,6 @@ texte = ['Bienvenue sur le site de la Calculette Rému ! Cette page permet de pr
 texte = ' '.join(texte)
 
 st.write(texte)
-st.write('Cette calculette est rendue accessible par le travail d’adhérent·es bénévoles. Vous pouvez consulter les données et le code source de cette application sur [GitHub](https://github.com) ou nous faire part de vos questions et suggestions à [cgtrterp@gmail.com](mailto:cgtrterp@gmail.com).')
 st.write('**L\'application n\'enregistre et n\'envoie aucune donnée personnelle.**')
 
 
@@ -126,6 +124,9 @@ csv = convert_df(trajectoire)
 # "text/csv",
 # key='download-csv'
 # )
+
+st.write('Cette calculette est rendue accessible par le travail d’adhérent·es bénévoles. Vous pouvez consulter les données et le code source de cette application sur [GitHub](https://github.com) ou nous faire part de vos questions et suggestions à [cgtrterp@gmail.com](mailto:cgtrterp@gmail.com).')
+
 
 # cacher le "Made with streamlit
 # https://www.kdnuggets.com/2021/07/streamlit-tips-tricks-hacks-data-scientists.html
