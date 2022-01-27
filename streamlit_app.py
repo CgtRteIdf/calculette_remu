@@ -31,7 +31,7 @@ date_actuelle = datetime.date.today().year
 
 # paramètres
 chart_list = ["rémunération brute", "historique SNB", "Obsolète : rémunération avec IC"]
-chart_id = st.sidebar.selectbox("type de graphique :", chart_list, index=0)
+chart_id = "rémunération brute" #st.sidebar.selectbox("type de graphique :", chart_list, index=0)
 
 NR_actuel = int(st.sidebar.number_input("NR actuel", min_value=0, max_value=370, value=150, step=5))
 # GF_actuel = st.sidebar.number_input("GF actuel", min_value=0, max_value=19, value=10)
