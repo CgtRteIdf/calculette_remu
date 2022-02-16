@@ -17,8 +17,8 @@ st.title('Calculette rémunération')
 st.write('Bienvenue ! Cette calculette permet de projeter sa rémunération actuelle (**brute**) dans le temps, de **simuler les évolutions prévues** (prise de NR par ex) et de **comparer cette projection avec l’inflation**. **L\'application n\'enregistre et n\'envoie aucune donnée personnelle.**')
 st.write('Pour mémoire, l’inflation n’est pas le même indice que le pouvoir d’achat (pour mieux comprendre, voir [ici](https://www.economie.gouv.fr/facileco/pouvoir-achat-definition) pour le pouvoir d\'achat, ou [ici](https://www.ecb.europa.eu/ecb/educational/hicp/html/index.fr.html) pour l\'inflation). En revanche, elle donne un bon premier aperçu de ce que représenterait votre rémunération d’aujourd’hui avec les prix de demain : quand l\'inflation augmente, le pouvoir d\'achat diminue.')
 texte = ['Dans la partie latérale gauche, vous pouvez définir différents paramètres pour vos simulations :\n',
-	 ' - NR : votre NR actuel\n,
-	 ' - Nombre d\'années entre 2 promotions : 3 mesures identifient le rythme auquel vous imaginez avoir une promotion (prise d’un NR). La courbe « optimiste » prend une vision légèrement plus positive que la moyenne, la courbe pessimiste c’est l’inverse. La calculette ne prend pas en compte les agents « Hors Classe ».\n,
+	 ' - NR : votre NR actuel\n',
+	 ' - Nombre d\'années entre 2 promotions : 3 mesures identifient le rythme auquel vous imaginez avoir une promotion (prise d’un NR). La courbe « optimiste » prend une vision légèrement plus positive que la moyenne, la courbe pessimiste c’est l’inverse. La calculette ne prend pas en compte les agents « Hors Classe ».\n',
 	 ' - Échelon : indiquez votre échelon actuel, et l\'application intégrera les prises d’échelon ultérieures automatiquement.\n'
 	 ' - Taux d’inflation : à ajuster chaque année selon les prévisions INSEE ([ici](https://www.insee.fr/fr/statistiques/5895592#:~:text=Sur%20un%20an%2C%20selon%20l,une%20moindre%20mesure%20%E2%80%93%20des%20services.) pour 2021).\n',
 	 ' - L\'application n\'enregistre et n\'envoie aucune donnée personnelle.']
